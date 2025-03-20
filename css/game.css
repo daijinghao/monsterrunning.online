@@ -1,0 +1,207 @@
+/* Game container styles */
+.game-container {
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+}
+
+.game-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Loading indicator for game */
+.game-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    color: white;
+}
+
+.game-loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--apple-blue);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Game controls section */
+.game-controls {
+    background-color: var(--apple-gray-6);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.control-key {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid var(--apple-gray-4);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 0 2px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Game info sidebar */
+.game-info-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Similar games */
+.similar-game-card {
+    display: flex;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    transition: background-color 0.3s ease;
+}
+
+.similar-game-card:hover {
+    background-color: var(--apple-gray-6);
+}
+
+.similar-game-image {
+    width: 80px;
+    height: 45px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 0.75rem;
+}
+
+.similar-game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Like button animation */
+.like-button {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.like-button:hover {
+    transform: scale(1.1);
+}
+
+.like-button.liked {
+    color: var(--apple-red);
+    fill: var(--apple-red);
+}
+
+.like-button.liked svg {
+    fill: var(--apple-red);
+}
+
+.like-button:active {
+    transform: scale(0.95);
+}
+
+/* Game fullscreen button */
+.fullscreen-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 20;
+}
+
+.game-container:hover .fullscreen-button {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .game-container {
+        border-radius: 8px;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        width: calc(100% + 2rem);
+    }
+    
+    .similar-game-image {
+        width: 60px;
+        height: 34px;
+    }
+}
+
+/* Game orientation warning for mobile */
+.orientation-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orientation-warning svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    animation: rotate 2s ease infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(90deg); }
+    75% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .orientation-warning.show {
+        display: flex;
+    }
+} 

@@ -1,0 +1,13 @@
+Monster Survivors Game Images Required:
+
+1. thumbnail.jpg - Game thumbnail image (16:9 aspect ratio, 480x270px recommended)
+- Used in game cards across the site
+- Used in social media sharing
+
+2. banner.jpg - Game banner image (wider format, 1200x400px recommended)
+- Used in the game detail page header (optional)
+
+3. gameplay.jpg - Gameplay screenshot (16:9 aspect ratio, 1280x720px recommended)
+- Used as a fallback if the game iframe fails to load
+
+Use screenshots from the actual game for these images. 

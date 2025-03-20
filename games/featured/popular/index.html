@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Games - Monster Running</title>
+    <meta name="description" content="Play the most popular browser games on Monster Running - join millions of players enjoying our top-rated games!">
+    <link rel="canonical" href="https://monsterrunning.online/popular">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-md sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-90">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">Monster Running</a>
+            
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="/" class="hover:text-blue-600 transition">Home</a>
+                <a href="/categories.html" class="hover:text-blue-600 transition">Categories</a>
+                <a href="/games/featured/popular" class="text-blue-600 transition">Popular</a>
+                <a href="/games/featured/new" class="hover:text-blue-600 transition">New Games</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search games..." class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                
+                <button class="md:hidden focus:outline-none" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white py-4 px-4" id="mobile-menu">
+            <div class="flex flex-col space-y-3">
+                <a href="/" class="hover:text-blue-600 transition py-2">Home</a>
+                <a href="/categories.html" class="hover:text-blue-600 transition py-2">Categories</a>
+                <a href="/games/featured/popular" class="text-blue-600 transition py-2">Popular</a>
+                <a href="/games/featured/new" class="hover:text-blue-600 transition py-2">New Games</a>
+                
+                <div class="relative mt-3">
+                    <input type="text" placeholder="Search games..." class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex items-center justify-center mb-8">
+            <div class="w-16 h-16 rounded-full bg-red-500 text-white flex items-center justify-center mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold">Popular Games</h1>
+        </div>
+        
+        <p class="text-xl text-gray-700 mb-10 text-center max-w-4xl mx-auto">Check out the most popular games on Monster Running! These are the games that players can't get enough of. Updated daily based on player activity.</p>
+        
+        <!-- Category Filter -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-4 text-center">Filter by Category</h2>
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="px-4 py-2 rounded-full bg-blue-600 text-white">All</button>
+                <button class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">Action</button>
+                <button class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">Puzzle</button>
+                <button class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">Strategy</button>
+                <button class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">Racing</button>
+                <button class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">Sports</button>
+            </div>
+        </div>
+        
+        <!-- Games Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+            <!-- Game Card 1 - Monster Survivors -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <a href="/action/monster-survivors" class="block">
+                    <div class="relative aspect-video">
+                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center category-action">
+                        </div>
+                        <div class="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 rounded-full text-xs font-medium">HOT</div>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg mb-1">Monster Survivors</h2>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Survive waves of monsters in this thrilling action game. How long can you last?</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">4.9</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <span class="text-sm">28.6k</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Game Card 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <a href="#" class="block">
+                    <div class="relative aspect-video">
+                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center category-puzzle">
+                        </div>
+                        <div class="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-medium">Popular</div>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg mb-1">Puzzle Master</h2>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Exercise your brain with challenging puzzles that test your logic and problem-solving skills.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">4.7</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <span class="text-sm">24.3k</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Game Card 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <a href="#" class="block">
+                    <div class="relative aspect-video">
+                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center category-racing">
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg mb-1">Speed Racer</h2>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Race at breakneck speeds through challenging tracks and become the champion!</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">4.6</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <span class="text-sm">22.1k</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Game Card 4 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <a href="#" class="block">
+                    <div class="relative aspect-video">
+                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center category-sports">
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg mb-1">Soccer Star</h2>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Lead your team to victory and become a soccer legend in this thrilling sports game!</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">4.5</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <span class="text-sm">19.8k</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Game Card 5 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <a href="#" class="block">
+                    <div class="relative aspect-video">
+                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center category-strategy">
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg mb-1">Tower Defense</h2>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Build defense towers to prevent enemies from invading your territory.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">4.8</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <span class="text-sm">18.5k</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- More game cards would be added here -->
+        </div>
+        
+        <!-- Pagination -->
+        <div class="flex justify-center">
+            <nav class="inline-flex rounded-md shadow">
+                <a href="#" class="py-2 px-4 bg-white border border-gray-300 rounded-l-md hover:bg-gray-50">Previous</a>
+                <a href="#" class="py-2 px-4 bg-blue-600 text-white border border-blue-600">1</a>
+                <a href="#" class="py-2 px-4 bg-white border border-gray-300 hover:bg-gray-50">2</a>
+                <a href="#" class="py-2 px-4 bg-white border border-gray-300 hover:bg-gray-50">3</a>
+                <a href="#" class="py-2 px-4 bg-white border border-gray-300 rounded-r-md hover:bg-gray-50">Next</a>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Monster Running</h3>
+                    <p class="mb-4 text-gray-300">Your destination for the best online games. Play Monster Survivors and many more exciting titles directly in your browser.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/action" class="hover:text-blue-400 transition">Action Games</a></li>
+                        <li><a href="/puzzle" class="hover:text-blue-400 transition">Puzzle Games</a></li>
+                        <li><a href="/strategy" class="hover:text-blue-400 transition">Strategy Games</a></li>
+                        <li><a href="/racing" class="hover:text-blue-400 transition">Racing Games</a></li>
+                        <li><a href="/sports" class="hover:text-blue-400 transition">Sports Games</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="/popular" class="hover:text-blue-400 transition">Popular Games</a></li>
+                        <li><a href="/new" class="hover:text-blue-400 transition">New Games</a></li>
+                        <li><a href="/privacy" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+                        <li><a href="/terms" class="hover:text-blue-400 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2023 Monster Running. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('button.md\\:hidden');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

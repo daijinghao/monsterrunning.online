@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Categories - Monster Running</title>
+    <meta name="description" content="Browse games by category on Monster Running - Action, Puzzle, Strategy, Racing, Sports and more!">
+    <link rel="canonical" href="https://monsterrunning.online/categories">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-md sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-90">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">Monster Running</a>
+            
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="/" class="hover:text-blue-600 transition">Home</a>
+                <a href="/categories.html" class="text-blue-600 transition">Categories</a>
+                <a href="/games/featured/popular" class="hover:text-blue-600 transition">Popular</a>
+                <a href="/games/featured/new" class="hover:text-blue-600 transition">New Games</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search games..." class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                
+                <button class="md:hidden focus:outline-none" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white py-4 px-4" id="mobile-menu">
+            <div class="flex flex-col space-y-3">
+                <a href="/" class="hover:text-blue-600 transition py-2">Home</a>
+                <a href="/categories.html" class="text-blue-600 transition py-2">Categories</a>
+                <a href="/games/featured/popular" class="hover:text-blue-600 transition py-2">Popular</a>
+                <a href="/games/featured/new" class="hover:text-blue-600 transition py-2">New Games</a>
+                
+                <div class="relative mt-3">
+                    <input type="text" placeholder="Search games..." class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">Game Categories</h1>
+        <p class="text-xl text-gray-700 mb-10 text-center max-w-4xl mx-auto">Browse our extensive collection of free online games by category. From action-packed adventures to brain-teasing puzzles, find the perfect game to play right in your browser.</p>
+        
+        <!-- Categories Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+            <a href="/games/categories/action" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-blue-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Action Games</h2>
+                    <p class="text-gray-600 mb-3">Fast-paced games that test your reflexes and reaction time.</p>
+                    <p class="text-blue-600 font-medium">10 Games Available</p>
+                </div>
+            </a>
+            
+            <a href="/games/categories/adventure" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-teal-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-teal-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Adventure Games</h2>
+                    <p class="text-gray-600 mb-3">Explore exciting worlds and discover new stories.</p>
+                    <p class="text-blue-600 font-medium">5 Games Available</p>
+                </div>
+            </a>
+            
+            <a href="/games/categories/puzzle" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-green-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Puzzle Games</h2>
+                    <p class="text-gray-600 mb-3">Challenge your mind with brain teasers and logic puzzles.</p>
+                    <p class="text-blue-600 font-medium">8 Games Available</p>
+                </div>
+            </a>
+            
+            <a href="/games/categories/strategy" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-purple-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-purple-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Strategy Games</h2>
+                    <p class="text-gray-600 mb-3">Plan, think ahead, and outsmart your opponents.</p>
+                    <p class="text-blue-600 font-medium">6 Games Available</p>
+                </div>
+            </a>
+            
+            <a href="/games/categories/racing" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-red-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Racing Games</h2>
+                    <p class="text-gray-600 mb-3">Speed through tracks and compete against the clock.</p>
+                    <p class="text-blue-600 font-medium">5 Games Available</p>
+                </div>
+            </a>
+            
+            <a href="/games/categories/sports" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-yellow-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-yellow-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Sports Games</h2>
+                    <p class="text-gray-600 mb-3">Virtual sports competitions from football to basketball.</p>
+                    <p class="text-blue-600 font-medium">7 Games Available</p>
+                </div>
+            </a>
+            
+            <a href="/games/categories/rpg" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-indigo-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">RPG Games</h2>
+                    <p class="text-gray-600 mb-3">Role-playing adventures with character progression.</p>
+                    <p class="text-blue-600 font-medium">4 Games Available</p>
+                </div>
+            </a>
+            
+            <a href="/games/categories/shooter" class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+                <div class="relative aspect-video">
+                    <div class="absolute inset-0 bg-pink-600 bg-opacity-20 flex items-center justify-center">
+                        <div class="w-16 h-16 rounded-full bg-pink-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Shooter Games</h2>
+                    <p class="text-gray-600 mb-3">Test your aim and reflexes in shooting games.</p>
+                    <p class="text-blue-600 font-medium">6 Games Available</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Monster Running</h3>
+                    <p class="mb-4 text-gray-300">Your destination for the best online games. Play Monster Survivors and many more exciting titles directly in your browser.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/games/categories/action" class="hover:text-blue-400 transition">Action Games</a></li>
+                        <li><a href="/games/categories/adventure" class="hover:text-blue-400 transition">Adventure Games</a></li>
+                        <li><a href="/games/categories/puzzle" class="hover:text-blue-400 transition">Puzzle Games</a></li>
+                        <li><a href="/games/categories/strategy" class="hover:text-blue-400 transition">Strategy Games</a></li>
+                        <li><a href="/games/categories/racing" class="hover:text-blue-400 transition">Racing Games</a></li>
+                        <li><a href="/games/categories/sports" class="hover:text-blue-400 transition">Sports Games</a></li>
+                        <li><a href="/games/categories/rpg" class="hover:text-blue-400 transition">RPG Games</a></li>
+                        <li><a href="/games/categories/shooter" class="hover:text-blue-400 transition">Shooter Games</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="/games/featured/popular" class="hover:text-blue-400 transition">Popular Games</a></li>
+                        <li><a href="/games/featured/new" class="hover:text-blue-400 transition">New Games</a></li>
+                        <li><a href="/privacy" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+                        <li><a href="/terms" class="hover:text-blue-400 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2023 Monster Running. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('button.md\\:hidden');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

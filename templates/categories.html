@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Categories - Browse All Game Types | Monster Running</title>
+    <meta name="description" content="Browse all game categories at Monster Running. Find action, adventure, puzzle, strategy, racing, sports games and more - all free to play in your browser.">
+    <link rel="canonical" href="https://monsterrunning.online/categories">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Game Categories - Browse All Game Types | Monster Running">
+    <meta property="og:description" content="Browse all game categories at Monster Running. Find action, adventure, puzzle, strategy, racing, sports games and more.">
+    <meta property="og:image" content="https://monsterrunning.online/images/categories/all-categories.jpg">
+    <meta property="og:url" content="https://monsterrunning.online/categories">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-md sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-90">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">Monster Running</a>
+            
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="/" class="hover:text-blue-600 transition">Home</a>
+                <a href="/categories" class="text-blue-600 transition">Categories</a>
+                <a href="/popular" class="hover:text-blue-600 transition">Popular</a>
+                <a href="/new" class="hover:text-blue-600 transition">New Games</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search games..." class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                
+                <button class="md:hidden focus:outline-none" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white py-4 px-4" id="mobile-menu">
+            <div class="flex flex-col space-y-3">
+                <a href="/" class="hover:text-blue-600 transition py-2">Home</a>
+                <a href="/categories" class="text-blue-600 transition py-2">Categories</a>
+                <a href="/popular" class="hover:text-blue-600 transition py-2">Popular</a>
+                <a href="/new" class="hover:text-blue-600 transition py-2">New Games</a>
+                
+                <div class="relative mt-3">
+                    <input type="text" placeholder="Search games..." class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Game Categories</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Browse our extensive collection of free online games by category. Find your next favorite game to play directly in your browser.</p>
+        </div>
+        
+        <!-- Game Type Categories -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Game Types</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Action Games -->
+                <a href="/action" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/action.jpg" alt="Action Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Action Games</h3>
+                                <p class="text-sm opacity-90">{{ACTION_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Puzzle Games -->
+                <a href="/puzzle" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/puzzle.jpg" alt="Puzzle Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Puzzle Games</h3>
+                                <p class="text-sm opacity-90">{{PUZZLE_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Strategy Games -->
+                <a href="/strategy" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/strategy.jpg" alt="Strategy Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Strategy Games</h3>
+                                <p class="text-sm opacity-90">{{STRATEGY_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Racing Games -->
+                <a href="/racing" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/racing.jpg" alt="Racing Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Racing Games</h3>
+                                <p class="text-sm opacity-90">{{RACING_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- RPG Games -->
+                <a href="/rpg" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/rpg.jpg" alt="RPG Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">RPG Games</h3>
+                                <p class="text-sm opacity-90">{{RPG_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Adventure Games -->
+                <a href="/adventure" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/adventure.jpg" alt="Adventure Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Adventure Games</h3>
+                                <p class="text-sm opacity-90">{{ADVENTURE_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Sports Games -->
+                <a href="/sports" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/sports.jpg" alt="Sports Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Sports Games</h3>
+                                <p class="text-sm opacity-90">{{SPORTS_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Shooting Games -->
+                <a href="/shooting" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/categories/shooting.jpg" alt="Shooting Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Shooting Games</h3>
+                                <p class="text-sm opacity-90">{{SHOOTING_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Game Theme Categories -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Game Themes</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Monster Games -->
+                <a href="/theme/monster" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/themes/monster.jpg" alt="Monster Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Monster Games</h3>
+                                <p class="text-sm opacity-90">{{MONSTER_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Zombie Games -->
+                <a href="/theme/zombie" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/themes/zombie.jpg" alt="Zombie Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Zombie Games</h3>
+                                <p class="text-sm opacity-90">{{ZOMBIE_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Fantasy Games -->
+                <a href="/theme/fantasy" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/themes/fantasy.jpg" alt="Fantasy Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Fantasy Games</h3>
+                                <p class="text-sm opacity-90">{{FANTASY_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Sci-Fi Games -->
+                <a href="/theme/sci-fi" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                        <div class="relative h-40">
+                            <img src="/images/themes/sci-fi.jpg" alt="Sci-Fi Games" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 text-white">
+                                <h3 class="text-xl font-bold">Sci-Fi Games</h3>
+                                <p class="text-sm opacity-90">{{SCI_FI_GAMES_COUNT}} games</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Info Section -->
+        <section class="bg-white rounded-xl shadow-md p-6 mb-12">
+            <h2 class="text-2xl font-bold mb-4">About Our Game Categories</h2>
+            <div class="prose max-w-none text-gray-700">
+                <p>At Monster Running, we organize our games into various categories to help you find exactly what you're looking for. Whether you prefer fast-paced action games, brain-teasing puzzles, strategic challenges, or thrilling races, we have something for everyone.</p>
+                <p>All of our games are free to play directly in your browser, with no downloads or installations required. Just click and start playing instantly!</p>
+                <p>We regularly add new games to our collection, so be sure to check back often to discover new titles. If you have a specific game in mind, use our search feature to find it quickly.</p>
+                <p>Happy gaming!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Monster Running</h3>
+                    <p class="mb-4 text-gray-300">Your destination for the best online games. Browse our categories and find your next favorite game to play directly in your browser.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/action" class="hover:text-blue-400 transition">Action Games</a></li>
+                        <li><a href="/puzzle" class="hover:text-blue-400 transition">Puzzle Games</a></li>
+                        <li><a href="/strategy" class="hover:text-blue-400 transition">Strategy Games</a></li>
+                        <li><a href="/racing" class="hover:text-blue-400 transition">Racing Games</a></li>
+                        <li><a href="/sports" class="hover:text-blue-400 transition">Sports Games</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="/popular" class="hover:text-blue-400 transition">Popular Games</a></li>
+                        <li><a href="/new" class="hover:text-blue-400 transition">New Games</a></li>
+                        <li><a href="/privacy" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+                        <li><a href="/terms" class="hover:text-blue-400 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2023 Monster Running. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js" defer></script>
+</body>
+</html> 
